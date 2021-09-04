@@ -5,15 +5,12 @@ const ErrorPage = () => {
   return (
     <Wrapper className="page-100">
       <section>
-
         <h1>404 Error</h1>
-        <h3>The requested   page not found here</h3>
+        <h3>The requested page not found here</h3>
         <Link to="/" className="btn">
           back home
         </Link>
-
       </section>
-
     </Wrapper>
   );
 };
