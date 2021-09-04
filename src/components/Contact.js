@@ -1,9 +1,28 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Contact = () => {
-  return <h4>contact section</h4>
-}
+  return (
+    <Wrapper>
+      <div className="section-center">
+        <h3>Join our Newsletter for Future Updates</h3>
+        <div className="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quis
+            obcaecati minus, autem ipsam cupiditate eum ratione vero praesentium
+            officiis adipisci distinctio ducimus ipsa numquam cum consectetur
+            impedit labore. Error!
+          </p>
+          <form className="contact-form">
+            <input type="text" className="form-input"  placeholder="Enter your mail"/>
+         <button type="submit" className="submit-btn">Suscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
 const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
@@ -67,6 +86,6 @@ const Wrapper = styled.section`
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
-`
+`;
 
-export default Contact
+export default Contact;
