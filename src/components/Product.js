@@ -9,13 +9,13 @@ const Product = ({ image, id, price, name }) => {
     <Wrapper>
       <div className="container">
         <img src={image} alt={name} />
-        <Link to={`/products/${id}`}>
+        <Link className="link" to={`/products/${id}`}>
           <FaSearch />
         </Link>
       </div>
       <footer>
         <h5>{name}</h5>
-        <p>{price}</p>
+        <p>{formatPrice(price)}</p>
       </footer>
     </Wrapper>
   );
