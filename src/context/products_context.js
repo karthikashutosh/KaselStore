@@ -21,7 +21,7 @@ const initialState = {
   featured_products: [],
   single_product_loading: false,
   single_product_error: false,
-  singleProduct: {},
+  single_Product: {},
 };
 
 const ProductsContext = React.createContext();
@@ -52,10 +52,10 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
     try {
       const res = await axios.get(url);
-      const singlePrdouct = res.data;
-      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload:singlePrdouct });
+      const single_Product = res.data;
+      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: single_Product });
     } catch (err) {
-      dispatch({ GET_PRODUCTS_ERROR });
+      dispatch({ GET_SINGLE_PRODUCT_ERROR });
     }
   };
 
@@ -63,7 +63,9 @@ export const ProductsProvider = ({ children }) => {
     fetchProducts(url);
   }, []);
   return (
-    <ProductsContext.Provider value={{ ...state, openSideBar, closeSideBar }}>
+    <ProductsContext.Provider
+      value={{ ...state, openSideBar, closeSideBar, fetchSingleProduct }}
+    >
       {children}
     </ProductsContext.Provider>
   );
