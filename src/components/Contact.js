@@ -14,7 +14,7 @@ const Contact = () => {
             impedit labore. Error!
           </p>
           <form className="contact-form">
-            <input type="text" className="form-input"  placeholder="Enter your mail"/>
+            <input type="text" className="form-input"  placeholder="Enter Your E-mail"/>
          <button type="submit" className="submit-btn">Suscribe</button>
           </form>
 
