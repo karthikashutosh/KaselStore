@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ProductImages = ({ images = [{ url: "" }] }) => {
   const [first, setFirst] = useState(images[0]);
-  console.log(first);
+  
 
   return (
     <Wrapper>
@@ -46,7 +46,7 @@ const Wrapper = styled.section`
     }
   }
   .active {
-    box-shadow: 0px 0px 0px 2px var(--clr-primary-5);
+    box-shadow: 0px 0px 0px 2px var(--clr-green-11);
   }
   @media (max-width: 576px) {
     .main {
