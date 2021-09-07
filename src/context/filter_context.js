@@ -16,7 +16,7 @@ const initialState = {
   filtered_products: [],
   all_products: [],
   grid_view: true,
-  sort: "price-lowest",
+  sort_name: "price-lowest",
 };
 
 const FilterContext = React.createContext();
@@ -29,6 +29,10 @@ export const FilterProvider = ({ children }) => {
   useEffect(() => {
     dispatch({ type: LOAD_PRODUCTS, payload: products });
   }, [products]);
+
+  useEffect(() => {
+    dispatch({ type: SORT_PRODUCTS });
+  }, [products, state.sort_name]);
 
   const setGridView = () => {
     dispatch({ type: SET_GRIDVIEW });
