@@ -41,8 +41,9 @@ export const FilterProvider = ({ children }) => {
   }, [products]);
 
   useEffect(() => {
+    dispatch({ type: FILTER_PRODUCTS });
     dispatch({ type: SORT_PRODUCTS });
-  }, [products, state.sort_name]);
+  }, [products, state.sort_name, state.filters]);
 
   const setGridView = () => {
     dispatch({ type: SET_GRIDVIEW });
