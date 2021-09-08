@@ -49,7 +49,7 @@ const Filters = () => {
               {categories.map((c, index) => {
                 return (
                   <button
-                    id={index}
+                    key={index}
                     onClick={updateFilters}
                     name="category"
                     className={`${
@@ -116,7 +116,34 @@ const Filters = () => {
               })}
             </div>
           </div>
+          <div className="form-control">
+            <h5>Price</h5>
+            <p className="price">{formatPrice(price)}</p>
+            <input
+              type="range"
+              name="price"
+              value={price}
+              onChange={updateFilters}
+              min={min_price}
+              max={max_price}
+            />
+          </div>
+          <div className="form-control shipping">
+            <h5>free Shipping</h5>
+            <input
+              type="checkbox"
+              name="shipping"
+              id="shipping"
+              onChange={updateFilters}
+              checked={shipping}
+            />
+          </div>
         </form>
+        <button
+          type="button"
+          className="clear-btn"
+          onClick={clearFilters}
+        >Clear Filters</button>
       </div>
     </Wrapper>
   );
