@@ -9,8 +9,9 @@ const CartColumns = () => {
         <h5>Price</h5>
         <h5>Quantitiy</h5>
         <h5>Amount</h5>
+        <span></span>
+
       </div>
-      <span></span>
       <hr />
     </Wrapper>
   );
