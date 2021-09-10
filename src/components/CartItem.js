@@ -7,8 +7,12 @@ import { useCartContext } from "../context/cart_context";
 const CartItem = ({ id, name, image, color, price, amount }) => {
   const { removeCart, toggleAmount } = useCartContext();
 
-  const increase = () => {};
-  const decrease = () => {};
+  const increase = () => {
+    toggleAmount(id, "plus");
+  };
+  const decrease = () => {
+    toggleAmount(id, "minus");
+  };
 
   return (
     <Wrapper>
