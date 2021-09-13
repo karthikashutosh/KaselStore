@@ -1,22 +1,32 @@
-## Notes
 
-#### Older React Version
 
-```
-"react": "^16.13.1",
-"react-dom": "^16.13.1",
-"react-scripts": "3.4.3",
-```
+#### Kasel-e-commerce store
 
-#### Current React Version
+## Functions of this app
+- user can login,and logout using Auth0
+- Users  can search products
+- users can filter products based on price, color,
+company,freeShipping,pricerange
+- users can sort products from four categories
 
-```
-"react": "^17.0.1",
-"react-dom": "^17.0.1",
-"react-scripts": "4.0.0",
-```
+     price lower
+     price higher
+     name a-z
+     name z-a
 
-#### Alternative fix
 
-.env file in the root
-FAST_REFRESH=FALSE
+### Technologies used
+
+1. React
+2. React-router
+3. Axios
+4. Styled Components
+5. Context-API
+6. netlify-functions
+7. stripe checkout
+
+
+
+
+
+
