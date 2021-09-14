@@ -23,7 +23,7 @@
      2. list view
 ### Technologies used
 
-1. React
+1. ReactHooks
 2. React-router
 3. Axios
 4. Styled Components
