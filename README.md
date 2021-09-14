@@ -28,5 +28,5 @@
 3. Axios
 4. Styled Components
 5. Context-API
-6. netlify-functions
+6. Auth0
 7. stripe checkout
