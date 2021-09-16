@@ -3,7 +3,8 @@ import styled from 'styled-components'
 const Footer = () => {
   return <Wrapper>
 <h5>&copy;{new Date().getFullYear()}
-<span>ComfySloth</span></h5>
+<span> Kasel Store  </span></h5>
+<br />
   <h5>All Rights Reserved</h5>
 
 
